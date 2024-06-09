@@ -22,12 +22,19 @@ The file path that should be changed:
 
 ## Requirements:
 torch==1.10.0+cu113
+
 mmcv==1.6.1
+
 mmcv_full==1.6.1
+
 numpy==1.24.4
+
 opencv_python==4.7.0.72
+
 Pillow==8.2.0
+
 scikit_learn==0.24.1
+
 scipy==1.13.1
 
 
