@@ -26,6 +26,9 @@ Download weights of SegFormer (MiT-B1) pre-trained on ImageNet-1K, and put them 
 https://github.com/NVlabs/SegFormer?tab=readme-ov-file
 
 
+##  Demo
+
+
 
 ## Requirements:
 
@@ -39,6 +42,10 @@ Pillow==8.2.0
 scikit_learn==0.24.1
 scipy==1.13.1
 ```
+
+
+## Citation:
+
 
 
 
