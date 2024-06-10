@@ -15,8 +15,15 @@ Code release is forthcoming.
 
 
 
-## File path
+
+##  Training
+
 The file path that should be changed:
+
+
+Download weights of SegFormer (MiT-B1) pre-trained on ImageNet-1K, nd put them in a folder
+
+https://github.com/NVlabs/SegFormer?tab=readme-ov-file
 
 
 
@@ -35,9 +42,19 @@ scipy==1.13.1
 
 
 
+
 ## Acknowledgement:
 
 Our model is based on the SegFormer,
+
 E. Xie et al. “SegFormer: Simple and efficient design for semantic segmentation with transformers”. NeurIPS 34 (2021), pp. 12077–12090
+
+
+
+
+
+
+
+
 
 
