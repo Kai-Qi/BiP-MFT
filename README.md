@@ -30,7 +30,7 @@ https://github.com/NVlabs/SegFormer?tab=readme-ov-file
 
 
 
-## Requirements:
+## Requirements
 
 ```
 torch==1.10.0+cu113
@@ -44,13 +44,13 @@ scipy==1.13.1
 ```
 
 
-## Citation:
+## Citation
 
 
 
 
 
-## Acknowledgement:
+## Acknowledgement
 
 Our model is based on the SegFormer,
 
