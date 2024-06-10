@@ -18,10 +18,10 @@ Code release is forthcoming.
 
 ##  Training
 
-The file path that should be changed:
+The file path should be changed.
 
 
-Download weights of SegFormer (MiT-B1) pre-trained on ImageNet-1K, nd put them in a folder
+Download weights of SegFormer (MiT-B1) pre-trained on ImageNet-1K, and put them in a folder
 
 https://github.com/NVlabs/SegFormer?tab=readme-ov-file
 
