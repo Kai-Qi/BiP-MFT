@@ -1,4 +1,4 @@
-# Bidirectional Projection-Based Multi-Modal Fusion Transformer for Early Detection of Cerebral Palsy in Infants with Periventricular White Matter Injury
+# Bidirectional Projection-Based Multi-Modal Fusion Transformer for Early Detection of Cerebral Palsy in Infants
 
 Code release is forthcoming.
 
