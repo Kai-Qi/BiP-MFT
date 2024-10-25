@@ -367,7 +367,7 @@ FNO2d-torch与FNO2d-paddle的训练loss和学习率对比结果如下：
 
 ## 6. 待解决的问题
 
-## 6.1 UFNO(layers=5)
+## 6.1 UFNO(layers=5)待解决的问题
 
 在训练模型`UFNO(layers=5)`时，Pytorch版本和Paddle版本的训练损失在epoch=2时出现了显著差异，具体表现如下
 
@@ -485,7 +485,7 @@ FNO2d-torch与FNO2d-paddle的训练loss和学习率对比结果如下：
 
 由于模型`UFNO(layers=1)`时的训练结果是对齐的，因此初步判断模型UFNO（layers=5）时出现的问题是由误差累积引起的。目前该问题尚未解决。
 
-## 6.2 SFNO
+## 6.2 SFNO待解决的问题
 
 在训练模型`SFNO`时，Pytorch版本和Paddle版本的训练损失在epoch=3时出现了显著差异，具体表现如下
 
@@ -602,7 +602,7 @@ FNO2d-torch与FNO2d-paddle的训练loss和学习率对比结果如下：
 
 
 
-## 6.3 TFNO
+## 6.3 TFNO待解决的问题
 
 `TFNO`中使用了tltorch进行张量分解，tltorch是tensorly的PyTorch版。tensorly源代码([https://github.com/tensorly/tensorly](https://github.com/tensorly/tensorly))中说明了
 ```
