@@ -25,7 +25,33 @@ Download weights of SegFormer (MiT-B1) pre-trained on ImageNet-1K, and put them 
 https://github.com/NVlabs/SegFormer?tab=readme-ov-file
 
 
-##  Demo
+##  Brain Tumor Segmentation: BraTS challenge 2021
+
+Please put the BraTS2021 dataset into dataset/ folder and it's structure should be like below:
+
+├── dataset/
+│   ├── brats2021
+│   │   ├── train
+│   │   │     ├── BraTS2021_00000
+│   │   │	  │		    ├──BraTS2021_00000_t1.nii.gz
+│   │   │	  │		    ├──BraTS2021_00000_t1ce.nii.gz
+│   │   │	  │		    ├──BraTS2021_00000_t2.nii.gz
+│   │   │	  │		    ├──BraTS2021_00000_flair.nii.gz
+│   │   │	  │		    └──BraTS2021_00000_seg.nii.gz
+│   │   │     ├── BraTS2021_00001   
+│   │   │     └── ...
+│   │   │        
+│   │   ├── val
+│   │   |     ├── BraTS2021_00800
+│   │   |     ├── BraTS2021_00801
+│   │   |     └── ...
+│   │   |     
+│   │   └── test
+│   │         ├── BraTS2021_01000        
+│   |         ├── BraTS2021_01001
+│   |         └── ...
+
+
 
 
 
