@@ -28,7 +28,7 @@ https://github.com/NVlabs/SegFormer?tab=readme-ov-file
 ##  Brain Tumor Segmentation: BraTS challenge 2021
 
 Please put the BraTS2021 dataset into dataset/ folder and it's structure should be like below:
-
+```
 ├── dataset/
 │   ├── brats2021
 │   │   ├── train
@@ -50,7 +50,7 @@ Please put the BraTS2021 dataset into dataset/ folder and it's structure should 
 │   │         ├── BraTS2021_01000        
 │   |         ├── BraTS2021_01001
 │   |         └── ...
-
+```
 
 
 
