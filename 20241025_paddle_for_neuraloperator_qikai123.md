@@ -152,6 +152,54 @@
 
 
 
+<font size="1">
+
+
+| API列表                                  | 对应单测                              | API列表                                  | 对应单测                              |
+| ---------------------------------------- | ------------------------------------- | ---------------------------------------- | ------------------------------------- |
+| BaseSpectralConv                         | 无                                   | legacy_spectral_convolution_SpectralConv | test_legacy_spectral_convolution.py  |
+| einsum_complexhalf_two_input             | 无                                   | legacy_spectral_convolution_SpectralConv1d | test_legacy_spectral_convolution.py |
+| einsum_complexhalf                       | 无                                   | legacy_spectral_convolution_SpectralConv2d | test_legacy_spectral_convolution.py |
+| PositionalEmbedding                      | 无                                   | legacy_spectral_convolution_SpectralConv3d | test_legacy_spectral_convolution.py |
+| FNOBlocks                                | test_fno_block.py                    | MLP                                     | 无                                   |
+| SubModule                                | 无                                   | MLPLinear                               | 无                                   |
+| FCLegendre                               | 无                                   | AdaIN                                   | 无                                   |
+| IntegralTransform                        | 无                                   | DomainPadding                           | test_padding.py                      |
+| _contract_dense                          | 无                                   | resample                                | test_resample.py                     |
+| _contract_dense_separable                | 无                                   | iterative_resample                      | 无                                   |
+| _contract_cp                             | 无                                   | segment_csr                             | 无                                   |
+| _contract_tucker                         | 无                                   | simple_neighbor_search                  | 无                                   |
+| _contract_tt                             | 无                                   | skip_connection                         | 无                                   |
+| get_contract_fun                         | 无                                   | SoftGating                              | 无                                   |
+| SubConv                                  | 无                                   | spectral_convolution_SpectralConv       | test_spectral_convolution.py         |
+| spectral_convolution_SpectralConv1d      | test_spectral_convolution.py         | spectral_convolution_SpectralConv2d     | test_spectral_convolution.py         |
+| spectral_convolution_SpectralConv3d      | test_spectral_convolution.py         | SHT                                     | test_spherical_convolution.py        |
+| SphericalConv                            | test_spherical_convolution.py        | FNO                                     | test_fno.py                          |
+| FNO1d                                    | test_fno.py                          | FNO2d                                   | test_fno.py                          |
+| FNO3d                                    | test_fno.py                          | TFNO                                    | test_fno.py                          |
+| TFNO1d                                   | test_fno.py                          | TFNO2d                                  | test_fno.py                          |
+| TFNO3d                                   | test_fno.py                          | UNO                                     | test_uno.py                          |
+| central_diff_1d                          | 无                                   | central_diff_2d                         | 无                                   |
+| central_diff_3d                          | 无                                   | LpLoss                                  | 无                                   |
+| H1Loss                                   | 无                                   | IregularLpqLoss                         | 无                                   |
+| WeightedL2DragLoss                       | 无                                   | BurgersEqnLoss                          | 无                                   |
+| ICLoss                                   | 无                                   | FieldwiseAggregatorLoss                 | 无                                   |
+| WeightedSumLoss                          | 无                                   | load_burgers_1d                         | 无                                   |
+| load_burgers_1dtime                      | 无                                   | load_darcy_flow_small                   | 无                                   |
+| load_darcy_pt                            | 无                                   | DefaultDataProcessor                    | test_data_processor.py               |
+| MGPatchingDataProcessor                  | 无                                   | H5pyDataset                             | 无                                   |
+| load_navier_stokes_pt                    | 无                                   | _load_navier_stokes_test_HR             | 无                                   |
+| OutputEncoder                            | 无                                   | MultipleFieldOutputEncoder              | 无                                   |
+| DictTransform                            | 无                                   | UnitGaussianNormalizer                  | test_output_encoder.py               |
+| load_pt_traintestsplit                   | 无                                   | load_spherical_swe                      | 无                                   |
+| SphericalSWEDataset                      | 无                                   | TensorDataset                           | 无                                   |
+| GeneralTensorDataset                     | 无                                   | Transform                               | 无                                   |
+| Normalizer                               | 无                                   | Composite                               | 无                                   |
+| MGPatchingTransform                      | 无                                   | RandomMGPatch                           | 无                                   |
+| MGPTensorDataset                         | 无                                   | regular_grid                            | 无                                   |
+| PositionalEmbedding2D                    | 无                                   | ZarrDataset                             | 无                                   |
+</font>
+
 
 ## 5. 测试和验收的考量
 
