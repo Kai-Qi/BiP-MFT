@@ -80,11 +80,11 @@ scipy==1.13.1
 
 ## Acknowledgement
 
-Our model is based on the SegFormer,
+Our model is based on:
 
 E. Xie et al. “SegFormer: Simple and efficient design for semantic segmentation with transformers”. NeurIPS 34 (2021), pp. 12077–12090
 
-
+Perera S, Navard P, Yilmaz A. SegFormer3D: an Efficient Transformer for 3D Medical Image Segmentation. CVPR 2024: 4981-4988.
 
 
 
