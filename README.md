@@ -13,7 +13,6 @@ Code release is forthcoming.
 
 ![Image text](architure2.png)
 
-![Image text](bidirectional_module.png)
 
 
 ##  Training
