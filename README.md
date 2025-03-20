@@ -3,7 +3,6 @@
 
 
 ##  Abstract
-
 Periventricular white matter injury (PWMI) is the most frequent magnetic resonance imaging (MRI) ﬁnding in infants with Cerebral Palsy (CP).
 We aim to detect CP and identify subtle, sparse PWMI lesions in infants under two years of age with immature brain structures.
 Based on the characteristic that the responsible lesions are located within five target regions,
@@ -18,8 +17,11 @@ methods, with 0.10, 0.08, and 0.09 improvements in classification accuracy, spec
 
 
 ## Architecture
-
 ![Image text](architure2.png)
+
+
+## Our Dataset
+
 
 
 
@@ -87,8 +89,6 @@ scipy==1.13.1
 
 
 ## Acknowledgement
-
-Our model is based on:
 
 E. Xie et al. “SegFormer: Simple and efficient design for semantic segmentation with transformers”. NeurIPS 34 (2021), pp. 12077–12090
 
