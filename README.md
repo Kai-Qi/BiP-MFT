@@ -25,7 +25,7 @@ methods, with 0.10, 0.08, and 0.09 improvements in classification accuracy, spec
 The PWMI-CP MRI dataset focuses on the study of periventricular white matter injury (PWMI) and its role in predicting the risk of cerebral palsy (CP) in infants. It consists of 310 MRI scan cases, including 122 infants diagnosed with PWMI (90 CP cases and 32 non-CP cases) and 188 infants with normal MRI scans as controls. The dataset includes multi-modal MRI scans, such as T1-weighted and T2-weighted imaging, acquired using 3.0T and 1.5T MRI scanners. The dataset provides annotated lesion regions using expert radiologist segmentation, making it a valuable resource for studying PWMI-related brain abnormalities and developing automated diagnostic models for CP risk assessment.
 
 
-##  Training
+##  Training on PWMI-CP MRI Dataset
 
 The file path should be changed.
 
@@ -36,7 +36,7 @@ https://github.com/NVlabs/SegFormer?tab=readme-ov-file
 
 
 
-##  Brain Tumor Segmentation: BraTS challenge 2021
+##  Applying our model to Brain Tumor Segmentation (BraTS challenge 2021)
 
 Please put the BraTS2021 dataset into dataset/ folder and it's structure should be like below:
 ```
