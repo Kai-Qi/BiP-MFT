@@ -11,7 +11,7 @@ Code release is forthcoming.
 
 ## Architecture
 
-
+![Image text](Architecture.png)
 
 
 
