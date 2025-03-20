@@ -11,8 +11,9 @@ Code release is forthcoming.
 
 ## Architecture
 
-![Image text](Architecture.png)
+![Image text](architure2.png)
 
+![Image text](bidirectional_module.png)
 
 
 ##  Training
