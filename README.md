@@ -37,22 +37,38 @@ Download weights of SegFormer (mit-b1.pth) pre-trained on ImageNet-1K, and put t
 
 Please put the Infant-PWMl-CP Dataset into the dataset/ folder and its structure should be like below:
 ```
-Infant-PWMl-CP/
-|-- T1/
-|   |-- case_001_T1.nii.gz
-|   |-- case_001_mask.nii.gz
-|   |-- case_002.nii.gz
-|   |-- case_002_mask.nii.gz
+Infant-PWML-CP/
+|-- CP/
+|   |-- 01001/
+|   |   |-- case_01001_T1.nii.gz
+|   |   |-- case_01001_T1_seg.nii.gz
+|   |   |-- case_01001_T2.nii.gz
+|   |   |-- case_01001_T2_seg.nii.gz
+|   |-- 01002/
+|   |-- 01003/
+|   |-- ...
+|   |-- 01090/
 |
+|-- N_CP/
+|   |-- 02001/
+|   |   |-- case_02001_T1.nii.gz
+|   |   |-- case_02001_T1_seg.nii.gz
+|   |   |-- case_02001_T2.nii.gz
+|   |   |-- case_02001_T2_seg.nii.gz
+|   |-- 02002/
+|   |-- 02003/
+|   |-- ...
+|   |-- 02032/
 |
-|-- T2/
-|   |-- case_001.nii.gz
-|   |-- case_001_mask.nii.gz
-|   |-- case_002.nii.gz
-|   |-- case_002_mask.nii.gz
-|
-|
-|-- Dataset Documentation.pdf
+|-- Normal/
+|   |-- 03001/
+|   |   |-- case_03001_T1.nii.gz
+|   |   |-- case_03001_T1_seg.nii.gz
+|   |   |-- case_03001_T2.nii.gz
+|   |-- 03002/
+|   |-- 03003/
+|   |-- ...
+|   |-- 03121/
 ```
 
 
