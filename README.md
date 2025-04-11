@@ -29,10 +29,11 @@ The PWMI-CP MRI dataset focuses on the study of periventricular white matter inj
 
 The file path should be changed.
 
+Download our Infant-PWMl-CP Dataset at [Google Drive](https://drive.google.com/file/d/1s3FbV6glczWeHdaRdgGHTmv3yZnrAJ0G/view?usp=sharing) or [Baidu Netdisk]().
 
-Download weights of SegFormer (mit-b1.pth) pre-trained on ImageNet-1K, and put them in a folder
+Download weights of SegFormer (mit-b1.pth) pre-trained on ImageNet-1K at [https://github.com/NVlabs/SegFormer?tab=readme-ov-file](https://connecthkuhk-my.sharepoint.com/personal/xieenze_connect_hku_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fxieenze%5Fconnect%5Fhku%5Fhk%2FDocuments%2Fsegformer%2Fpretrained%5Fmodels&ga=1), and put them in a folder
 
-[https://github.com/NVlabs/SegFormer?tab=readme-ov-file](https://connecthkuhk-my.sharepoint.com/personal/xieenze_connect_hku_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fxieenze%5Fconnect%5Fhku%5Fhk%2FDocuments%2Fsegformer%2Fpretrained%5Fmodels&ga=1)
+
 
 
 Please put the Infant-PWMl-CP Dataset into the dataset/ folder and its structure should be like below:
