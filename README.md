@@ -35,12 +35,30 @@ Download weights of SegFormer (mit-b1.pth) pre-trained on ImageNet-1K, and put t
 [https://github.com/NVlabs/SegFormer?tab=readme-ov-file](https://connecthkuhk-my.sharepoint.com/personal/xieenze_connect_hku_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fxieenze%5Fconnect%5Fhku%5Fhk%2FDocuments%2Fsegformer%2Fpretrained%5Fmodels&ga=1)
 
 
-
+Please put the Infant-PWMl-CP Dataset into the dataset/ folder and its structure should be like below:
+```
+Infant-PWMl-CP/
+|-- T1/
+|   |-- case_001_T1.nii.gz
+|   |-- case_001_mask.nii.gz
+|   |-- case_002.nii.gz
+|   |-- case_002_mask.nii.gz
+|
+|
+|-- T2/
+|   |-- case_001.nii.gz
+|   |-- case_001_mask.nii.gz
+|   |-- case_002.nii.gz
+|   |-- case_002_mask.nii.gz
+|
+|
+|-- Dataset Documentation.pdf
+```
 
 
 ##  Applying our model to Brain Tumor Segmentation (BraTS challenge 2021)
 
-Please put the BraTS2021 dataset into dataset/ folder and it's structure should be like below:
+Please put the BraTS2021 dataset into the dataset/ folder, and its structure should be like below:
 ```
 ├── dataset/
 │   ├── brats2021
