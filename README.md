@@ -17,12 +17,14 @@ methods, with 0.10, 0.08, and 0.09 improvements in classification accuracy, spec
 
 
 ## Architecture
-![Image text](architure2.png)
+![Image text](visualization.png)
 
 
 ## Our Dataset: PWMI-CP MRI Dataset
 
 The PWMI-CP MRI dataset focuses on the study of periventricular white matter injury (PWMI) and its role in predicting the risk of cerebral palsy (CP) in infants. It consists of 310 MRI scan cases, including 122 infants diagnosed with PWMI (90 CP cases and 32 non-CP cases) and 188 infants with normal MRI scans as controls. The dataset includes multi-modal MRI scans, such as T1-weighted and T2-weighted imaging, acquired using 3.0T and 1.5T MRI scanners. The dataset provides annotated lesion regions using expert radiologist segmentation, making it a valuable resource for studying PWMI-related brain abnormalities and developing automated diagnostic models for CP risk assessment.
+
+![Image text](architure2.png)
 
 
 ##  Training on PWMI-CP MRI Dataset
