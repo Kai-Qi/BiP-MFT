@@ -2,7 +2,7 @@
 
 
 
-##  Abstract
+##  1. Abstract
 Periventricular white matter injury (PWMI) is the most frequent magnetic resonance imaging (MRI) ﬁnding in infants with Cerebral Palsy (CP).
 We aim to detect CP and identify subtle, sparse PWMI lesions in infants under two years of age with immature brain structures.
 Based on the characteristic that the responsible lesions are located within five target regions,
@@ -16,16 +16,16 @@ accuracy of 0.90, specificity of 0.87, and sensitivity of
 methods, with 0.10, 0.08, and 0.09 improvements in classification accuracy, specificity and sensitivity respectively. Our BPFM outperforms eight compared feature fusion strategies using Transformer and U-Net backbones on our dataset. Ablation studies on the dataset annotations and model components justify the effectiveness of our annotation method and the model rationality.
 
 
-## Architecture
+## 2. Architecture
 ![Image text](architure2.png)
 
 
-## Our Dataset: Infant-PWMl-CP Dataset
+## 3. Our Dataset: Infant-PWMl-CP Dataset
 
 The PWMI-CP MRI dataset focuses on the study of periventricular white matter injury (PWMI) and its role in predicting the risk of cerebral palsy (CP) in infants. It consists of 310 MRI scan cases, including 122 infants diagnosed with PWMI (90 CP cases and 32 non-CP cases) and 188 infants with normal MRI scans as controls. The dataset includes multi-modal MRI scans, such as T1-weighted and T2-weighted imaging, acquired using 3.0T and 1.5T MRI scanners. The dataset provides annotated lesion regions using expert radiologist segmentation, making it a valuable resource for studying PWMI-related brain abnormalities and developing automated diagnostic models for CP risk assessment.
 ![Image text](visualization.png)
 
-##  Training on Infant-PWMl-CP Dataset
+##  4. Training on our Infant-PWMl-CP Dataset
 
 The file path should be changed.
 
@@ -72,7 +72,7 @@ Infant-PWML-CP/
 ```
 
 
-##  Applying our model to Brain Tumor Segmentation (BraTS challenge 2021)
+##  5. Applying our model to Brain Tumor Segmentation (BraTS challenge 2021)
 
 Please put the BraTS2021 dataset into the dataset/ folder, and its structure should be like below:
 ```
@@ -104,7 +104,7 @@ Please put the BraTS2021 dataset into the dataset/ folder, and its structure sho
 
 
 
-## Requirements
+## 6. Requirements
 
 ```
 torch==1.10.0+cu113
@@ -118,13 +118,13 @@ scipy==1.13.1
 ```
 
 
-## Citation
+## 7. Citation
 
 
 
 
 
-## Acknowledgement
+## 8. Acknowledgement
 
 E. Xie et al. “SegFormer: Simple and efficient design for semantic segmentation with transformers”. NeurIPS 34 (2021), pp. 12077–12090
 
