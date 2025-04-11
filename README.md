@@ -71,6 +71,8 @@ Infant-PWML-CP/
 |   |-- 03121/
 ```
 
+The case identifiers used for the training and validation sets in each fold of the five-fold cross-validation are in the accompanying text file.
+The model weights trained on the fold-0 dataset can be downloaded from the following link.
 
 ##  5. Applying our model to Brain Tumor Segmentation (BraTS challenge 2021)
 
