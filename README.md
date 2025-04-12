@@ -133,6 +133,7 @@ E. Xie et al. “SegFormer: Simple and efficient design for semantic segmentatio
 
 Perera S, Navard P, Yilmaz A. SegFormer3D: an Efficient Transformer for 3D Medical Image Segmentation. CVPR 2024: 4981-4988.
 
+J. Lin et al. “CKD-TransBTS: clinical knowledge-driven hybrid transformer with modality-correlated cross-attention for brain tumor segmentation”. IEEE Trans. Med. Imag. 42.8 (2023), pp. 2451–2461.
 
 
 
