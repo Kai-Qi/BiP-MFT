@@ -97,8 +97,9 @@ The "--dataset-folder" is the file path of the BraTS challenge 2021 dataset.
 
 The weights of our model "best_model.pkl" trained on the BraTS challenge 2021 dataset can be downloaded at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
 
+### BraTS2021 dataset
 
-The structure of  BraTS2021 dataset should be like below:
+The structure of the BraTS2021 dataset should be like below:
 ```
 ├── dataset/
 │   ├── brats2021
