@@ -25,13 +25,17 @@ methods, with 0.10, 0.08, and 0.09 improvements in classification accuracy, spec
 The PWMI-CP MRI dataset focuses on the study of periventricular white matter injury (PWMI) and its role in predicting the risk of cerebral palsy (CP) in infants. It consists of 310 MRI scan cases, including 122 infants diagnosed with PWMI (90 CP cases and 32 non-CP cases) and 188 infants with normal MRI scans as controls. The dataset includes multi-modal MRI scans, such as T1-weighted and T2-weighted imaging, acquired using 3.0T and 1.5T MRI scanners. The dataset provides annotated lesion regions using expert radiologist segmentation, making it a valuable resource for studying PWMI-related brain abnormalities and developing automated diagnostic models for CP risk assessment. The dataset documentation is available for download at the following link.
 ![Image text](visualization.png)
 
-##  4. Training on our Infant-PWMl-CP Dataset
+##  4. Training on our Infant-PWMl-CP Dataset: BiP-MFT-2D_Infant-PWMl-CP/
 
-The file path should be changed.
+The file path "total_path", "pretrained_weight_path" and "data_path" should be changed in the BiP-MFT-2D_Infant-PWMl-CP/train.py.
+
+The "total_path" is your current file path of "BiP-MFT-2D_Infant-PWMl-CP/".
 
 Download our Infant-PWMl-CP Dataset at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
 
 Download weights of SegFormer (mit-b1.pth) pre-trained on ImageNet-1K at [https://github.com/NVlabs/SegFormer?tab=readme-ov-file](https://connecthkuhk-my.sharepoint.com/personal/xieenze_connect_hku_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fxieenze%5Fconnect%5Fhku%5Fhk%2FDocuments%2Fsegformer%2Fpretrained%5Fmodels&ga=1), and put them in a folder
+
+Download weights of our model "" trained on 0-fold of Infant-PWMl-CP Dataset at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
 
 
 
