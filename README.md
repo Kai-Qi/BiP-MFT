@@ -35,7 +35,7 @@ The "total_path" is the absolute file path of "BiP-MFT-2D_Infant-PWMl-CP/".
 
 The "pretrained_weight_path" is the weights of SegFormer pre-trained on ImageNet-1K, named "mit_b1.pth", which can be download at [SegFormer](https://connecthkuhk-my.sharepoint.com/personal/xieenze_connect_hku_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fxieenze%5Fconnect%5Fhku%5Fhk%2FDocuments%2Fsegformer%2Fpretrained%5Fmodels&ga=1), or our [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) and [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
 
-The "data_path" is our Infant-PWMl-CP Dataset named "Infant-PWMl-CP.zip", which can be download at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
+The "data_path" is our Infant-PWMl-CP Dataset named "Infant-PWMl-CP.zip" (2.86GB), which can be download at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
 
 ### Test
 
