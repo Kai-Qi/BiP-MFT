@@ -1,21 +1,11 @@
 # Bidirectional Projection-Based Multi-Modal Fusion Transformer for Early Detection of Cerebral Palsy in Infants
 
 ##  🧾 1.  Abstract
-Periventricular white matter injury (PWMI) is the most frequent magnetic resonance imaging (MRI) ﬁnding in infants with Cerebral Palsy (CP).
-We aim to detect CP and identify subtle, sparse PWMI lesions in infants under two years of age with immature brain structures.
-Based on the characteristic that the responsible lesions are located within five target regions,
-we first construct a multi-modal dataset including 310 cases with the mask annotations of five target regions for delineating anatomical structures on T1-Weighted Imaging (T1WI) images, masks for lesions on T2-Weighted Imaging (T2WI) images, and categories (CP or Non-CP).
-Furthermore,
-we develop a bidirectional projection-based multi-modal
-fusion transformer (BiP-MFT), incorporating a ***Bidirectional Projection Fusion Module*** (BPFM) for integrating the features between five target regions on T1WI images and lesions on T2WI images.
-Our BiP-MFT achieves subject-level classification
-accuracy of 0.90, specificity of 0.87, and sensitivity of
-0.94. It surpasses the best results of nine comparative
-methods, with 0.10, 0.08, and 0.09 improvements in classification accuracy, specificity, and sensitivity, respectively. Our BPFM outperforms eight compared feature fusion strategies using Transformer and U-Net backbones on our dataset. Ablation studies on the dataset annotations and model components justify the effectiveness of our annotation method and the model rationality.
+
 
 Periventricular white matter injury (PWMI) is the most common magnetic resonance imaging (MRI) finding in infants with cerebral palsy (CP). This work aims to detect CP and identify subtle, sparse PWMI lesions in infants under two years old with immature brain structures.
 
-To this end, we construct a multi-modal dataset consisting of 310 cases, each with:
+To this end, we construct a multi-modal dataset consisting of 243 cases, each with:
 - Region masks of five anatomically defined target areas on T1-weighted imaging (T1WI),
 - Lesion annotations on T2-weighted imaging (T2WI),
 - Diagnostic labels (CP or Non-CP).
