@@ -13,7 +13,7 @@ fusion transformer (BiP-MFT), incorporating a ***Bidirectional Projection Fusion
 Our BiP-MFT achieves subject-level classification
 accuracy of 0.90, specificity of 0.87, and sensitivity of
 0.94. It surpasses the best results of nine comparative
-methods, with 0.10, 0.08, and 0.09 improvements in classification accuracy, specificity and sensitivity respectively. Our BPFM outperforms eight compared feature fusion strategies using Transformer and U-Net backbones on our dataset. Ablation studies on the dataset annotations and model components justify the effectiveness of our annotation method and the model rationality.
+methods, with 0.10, 0.08, and 0.09 improvements in classification accuracy, specificity, and sensitivity, respectively. Our BPFM outperforms eight compared feature fusion strategies using Transformer and U-Net backbones on our dataset. Ablation studies on the dataset annotations and model components justify the effectiveness of our annotation method and the model rationality.
 
 
 ## 2. Architecture
@@ -29,21 +29,21 @@ The PWMI-CP MRI dataset focuses on the study of periventricular white matter inj
 
 ### Train
 
-The file path "total_path", "pretrained_weight_path" and "data_path" should be changed in the `BiP-MFT-2D_Infant-PWMl-CP/train.py`.
+The file path "total_path", "pretrained_weight_path", and "data_path" should be changed in the `BiP-MFT-2D_Infant-PWMl-CP/train.py`.
 
 The "total_path" is the absolute file path of "BiP-MFT-2D_Infant-PWMl-CP/".
 
 The "pretrained_weight_path" is the weights of SegFormer pre-trained on ImageNet-1K, named "mit_b1.pth", which can be download at [SegFormer](https://connecthkuhk-my.sharepoint.com/personal/xieenze_connect_hku_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fxieenze%5Fconnect%5Fhku%5Fhk%2FDocuments%2Fsegformer%2Fpretrained%5Fmodels&ga=1), or our [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) and [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
 
-The "data_path" is our Infant-PWMl-CP Dataset named "Infant-PWMl-CP.zip" (2.86GB), which can be download at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
+The "data_path" is our Infant-PWMl-CP Dataset named "Infant-PWMl-CP.zip" (2.86GB), which can be downloaded at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
 
 ### Test
 
-The weights of our model "last_epoch_weights.pth" trained on the 0-fold data of Infant-PWMl-CP Dataset can be downloaded at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
+The weights of our model "last_epoch_weights.pth" trained on the 0-fold data of the Infant-PWMl-CP Dataset can be downloaded at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
 
 
 ### Infant-PWMl-CP Dataset
-The dataset document "Dataset_Documentation.pdf" can be download at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
+The dataset document "Dataset_Documentation.pdf" can be downloaded at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
 The structure of Infant-PWMl-CP should be like below:
 ```
 Infant-PWML-CP/
@@ -99,7 +99,7 @@ The weights of our model "best_model.pkl" trained on the BraTS challenge 2021 da
 
 ### BraTS2021 dataset
 
-The structure of the BraTS2021 dataset should be like below:
+The structure of the BraTS2021 dataset should be like the one below:
 ```
 ├── dataset/
 │   ├── brats2021
