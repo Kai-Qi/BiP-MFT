@@ -1,6 +1,6 @@
 
 import os 
-os.environ['CUDA_VISIBLE_DEVICES'] = '5'
+# os.environ['CUDA_VISIBLE_DEVICES'] = '5'
 import argparse
 
 from timeit import default_timer
