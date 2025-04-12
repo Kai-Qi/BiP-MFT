@@ -94,7 +94,7 @@ The trained model weights (`last_epoch_weights.pth`) from Fold 0 of the Infant-P
 ---
 
 
-## 🧪 5.  Applying Our Model to Brain Tumor Segmentation (BraTS 2021)
+## 🚀 5.  Applying Our Model to Brain Tumor Segmentation (BraTS 2021)
 
 ### 🔧 Training
 
