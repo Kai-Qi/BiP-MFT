@@ -30,7 +30,7 @@ The **PWMI-CP MRI dataset** is designed to support research on periventricular w
   - 32 non-CP cases  
 - 121 healthy controls with normal MRI scans.
 
-The dataset includes **multi-modal MRI sequences** such as T1-weighted and T2-weighted scans, acquired from both 3.0T and 1.5T MRI systems. Expert-annotated lesion segmentations are provided for PWMI cases, making this dataset a valuable resource for studying brain abnormalities and developing automated diagnostic models for early CP risk assessment. The following figure shows the five target regions and typical CP-associated PWMI lesions.
+The dataset includes **multi-modal MRI sequences** such as T1-weighted and T2-weighted scans acquired from both 3.0T and 1.5T MRI systems. Expert-annotated lesion segmentations are provided for PWMI cases, making this dataset a valuable resource for studying brain abnormalities and developing automated diagnostic models for early CP risk assessment. The following figure shows the five target regions and typical CP-associated PWMI lesions.
 
 ![Image text](visualization.png)
 
@@ -126,7 +126,7 @@ CUDA_VISIBLE_DEVICES=0 python BiP-MFT-3D_Brain2021/main.py \
 
 ### 🧪 Evaluation
 
-The pretrained model weights (`best_model.pkl`) trained on the BraTS 2021 dataset can be downloaded from:
+The pre-trained model weights (`best_model.pkl`) trained on the BraTS 2021 dataset can be downloaded from:
 [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
 
 ### 📁 BraTS2021 dataset
