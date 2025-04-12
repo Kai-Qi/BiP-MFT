@@ -146,7 +146,6 @@ scipy==1.13.1
 ## 7. Citation
 ```
 Kai Qi, Tingting Huang, Chao Jin, Yizhe Yang, Shihui Ying, Jian Sun*, and Jian Yang*. Bidirectional Projection-Based Multi-Modal
-
 Fusion Transformer for Early Detection of Cerebral Palsy in Infants, IEEE Trans. on Medical Imaging, Accept with minor revision, 2025.
 ```
 
