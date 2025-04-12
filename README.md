@@ -20,35 +20,14 @@ methods, with 0.10, 0.08, and 0.09 improvements in classification accuracy, spec
 
 ## 3. Our Dataset: Infant-PWMl-CP Dataset
 
-The PWMI-CP MRI dataset focuses on the study of periventricular white matter injury (PWMI) and its role in predicting the risk of cerebral palsy (CP) in infants. It consists of 243 MRI scan cases, including 122 infants diagnosed with PWMI (90 CP cases and 32 non-CP cases) and 121 infants with normal MRI scans as controls. The dataset includes multi-modal MRI scans, such as T1-weighted and T2-weighted imaging, acquired using 3.0T and 1.5T MRI scanners. The dataset provides annotated lesion regions using expert radiologist segmentation, making it a valuable resource for studying PWMI-related brain abnormalities and developing automated diagnostic models for CP risk assessment. The dataset (Infant-PWMl-CP.zip, 2.86GB) is available for download at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
+The PWMI-CP MRI dataset focuses on the study of periventricular white matter injury (PWMI) and its role in predicting the risk of cerebral palsy (CP) in infants. It consists of 243 MRI scan cases, including 122 infants diagnosed with PWMI (90 CP cases and 32 non-CP cases) and 121 infants with normal MRI scans as controls. The dataset includes multi-modal MRI scans, such as T1-weighted and T2-weighted imaging, acquired using 3.0T and 1.5T MRI scanners. The dataset provides annotated lesion regions using expert radiologist segmentation, making it a valuable resource for studying PWMI-related brain abnormalities and developing automated diagnostic models for CP risk assessment. 
 ![Image text](visualization.png)
 
-##  4. Training on our Infant-PWMl-CP Dataset
-
-### Training
-
-The file path `total_path`, `pretrained_weight_path`, and `data_path` should be changed in the `BiP-MFT-2D_Infant-PWMl-CP/train.py`.
-
-The `total_path` is the absolute file path of `BiP-MFT-2D_Infant-PWMl-CP/`.
-
-The `pretrained_weight_path` is the weights of SegFormer pre-trained on ImageNet-1K, named `mit_b1.pth`, which can be downloaded [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
-
-The `data_path` is our Infant-PWMl-CP Dataset named `Infant-PWMl-CP.zip` (2.86GB), which can be downloaded at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
-
-Example: Train our model on the Infant-PWMl-CP Dataset:
-
-```
-CUDA_VISIBLE_DEVICES=0 python BiP-MFT-2D_Infant-PWMl-CP/train.py --w1 0.2 --w2 0.5 --w3 0.1 --w4 0.2 --learn_rate 0.000015 --num_epochs 30 --fold 0 --phi 'mit_b1' --batch_size 5; 
-```
-
-### Evaluation
-
-The weights of our model `last_epoch_weights.pth` trained on the 0-fold data of the Infant-PWMl-CP Dataset can be downloaded at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
+The dataset (Infant-PWMl-CP.zip, 2.86GB) and dataset documentation are available for download at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
 
 
-### Infant-PWMl-CP Dataset
-The dataset document `Dataset_Documentation.pdf` can be downloaded at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
-The structure of Infant-PWMl-CP should be like below:
+The case identifiers used for the training and validation sets in each fold of the five-fold cross-validation are in the `BiP-MFT-2D_Infant-PWML-CP/k-fold-ID/K-fold-ID.txt`.
+The directory structure of Infant-PWML-CP is organized as follows:
 ```
 Infant-PWML-CP/
 |-- CP/
@@ -84,33 +63,64 @@ Infant-PWML-CP/
 |   |-- 03121/
 ```
 
-The case identifiers used for the training and validation sets in each fold of the five-fold cross-validation are in the accompanying text file.
-The model weights trained on the fold-0 dataset can be downloaded from the following link.
 
-##  5. Applying our model to Brain Tumor Segmentation (BraTS challenge 2021)
+##  4. Training on the Infant-PWMl-CP Dataset
 
-### Training
+### 🔧 Training
 
-The file path `path` and `--dataset-folder` should be changed in the `BiP-MFT-3D_Brain2021/main.py`.
+Before training, please modify the following file paths in `BiP-MFT-2D_Infant-PWML-CP/train.py`:
 
-The `path` is the absolute file path of `BiP-MFT-3D_Brain2021/`.
+- **`total_path`**: The absolute path to the `BiP-MFT-2D_Infant-PWML-CP/` directory.
+- **`pretrained_weight_path`**: The path to the SegFormer weights pretrained on ImageNet-1K (`mit_b1.pth`), which can be downloaded from  
+  [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or  [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
 
-The `--dataset-folder` is the file path of the BraTS challenge 2021 dataset.
+- **`data_path`**: The path to the Infant-PWML-CP dataset archive `Infant-PWML-CP.zip` (2.86 GB), downloadable from the same links above.
 
-Example: Train our model on the BraTS challenge 2021 dataset:
+**Example command for training on Fold 0:**
+
+```b
+CUDA_VISIBLE_DEVICES=0 python BiP-MFT-2D_Infant-PWML-CP/train.py \
+  --w1 0.2 --w2 0.5 --w3 0.1 --w4 0.2 \
+  --learn_rate 0.000015 --num_epochs 30 \
+  --fold 0 --phi 'mit_b1' --batch_size 5
+```
+
+
+### 🧪 Evaluation
+
+The trained model weights (`last_epoch_weights.pth`) from Fold 0 of the Infant-PWML-CP dataset are available for download:
+[Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing)  or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
+
+---
+
+
+## 5. Applying Our Model to Brain Tumor Segmentation (BraTS 2021)
+
+### 🧪 Training
+
+Before training on the BraTS 2021 dataset, please update the following paths in `BiP-MFT-3D_Brain2021/main.py`:
+
+- **`path`**: The absolute path to the `BiP-MFT-3D_Brain2021/` directory.
+- **`--dataset-folder`**: The path to the BraTS 2021 dataset.
+
+**Example command for training on BraTS 2021:**
 
 ```
-CUDA_VISIBLE_DEVICES=0 python BiP-MFT-3D_Brain2021/main.py --workers 4 --val 1 --learn_rate2 0.000001 --lr 0.000001 --eta_min 0.0000001 --clip 60 --batch-size 1 --drop_path_rate 0.1 --drop 0.2 --end-epoch 500;
+CUDA_VISIBLE_DEVICES=0 python BiP-MFT-3D_Brain2021/main.py \
+  --workers 4 --val 1 --learn_rate2 0.000001 --lr 0.000001 \
+  --eta_min 0.0000001 --clip 60 --batch-size 1 \
+  --drop_path_rate 0.1 --drop 0.2 --end-epoch 500
 ```
 
 
-### Evaluation
+### 🧪 Evaluation
 
-The weights of our model `best_model.pkl` trained on the BraTS challenge 2021 dataset can be downloaded at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
+The pretrained model weights (`best_model.pkl`) trained on the BraTS 2021 dataset can be downloaded from:
+[Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
 
-### BraTS2021 dataset
+### 📁 BraTS2021 dataset
 
-The structure of the BraTS2021 dataset should be like the one below:
+The expected directory structure of the BraTS 2021 dataset is as follows:
 ```
 ├── dataset/
 │   ├── brats2021
