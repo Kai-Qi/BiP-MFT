@@ -195,9 +195,9 @@ If you find this work useful in your research, please cite our paper:
 
 We would like to acknowledge the contributions of the following works, which inspired and supported our research:
 
-- Xie, E., Wang, W., Yu, Z., et al. **SegFormer: Simple and efficient design for semantic segmentation with transformers**. *NeurIPS*, 34 (2021), pp. 12077–12090.
-- Perera, S., Navard, P., Yilmaz, A. **SegFormer3D: An Efficient Transformer for 3D Medical Image Segmentation**. *CVPR*, 2024, pp. 4981–4988.
-- Lin, J., Chen, C., Xie, W., et al. **CKD-TransBTS: Clinical knowledge-driven hybrid transformer with modality-correlated cross-attention for brain tumor segmentation**. *IEEE Transactions on Medical Imaging*, 42(8), 2023, pp. 2451–2461.
+- Xie, E., Wang, W., Yu, Z., et al. **SegFormer: Simple and efficient design for semantic segmentation with transformers**. *NeurIPS*, 34 (2021), pp. 12077-12090.
+- Perera, S., Navard, P., Yilmaz, A. **SegFormer3D: An Efficient Transformer for 3D Medical Image Segmentation**. *CVPR*, 2024, pp. 4981-4988.
+- Lin, J., Chen, C., Xie, W., et al. **CKD-TransBTS: Clinical knowledge-driven hybrid transformer with modality-correlated cross-attention for brain tumor segmentation**. *IEEE Transactions on Medical Imaging*, 42(8), 2023, pp. 2451-2461.
 
 
 
