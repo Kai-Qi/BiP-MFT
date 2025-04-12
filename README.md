@@ -1,6 +1,6 @@
 # Bidirectional Projection-Based Multi-Modal Fusion Transformer for Early Detection of Cerebral Palsy in Infants
 
-##  1. Abstract
+##  🧾 1.  Abstract
 Periventricular white matter injury (PWMI) is the most frequent magnetic resonance imaging (MRI) ﬁnding in infants with Cerebral Palsy (CP).
 We aim to detect CP and identify subtle, sparse PWMI lesions in infants under two years of age with immature brain structures.
 Based on the characteristic that the responsible lesions are located within five target regions,
@@ -14,11 +14,11 @@ accuracy of 0.90, specificity of 0.87, and sensitivity of
 methods, with 0.10, 0.08, and 0.09 improvements in classification accuracy, specificity, and sensitivity, respectively. Our BPFM outperforms eight compared feature fusion strategies using Transformer and U-Net backbones on our dataset. Ablation studies on the dataset annotations and model components justify the effectiveness of our annotation method and the model rationality.
 
 
-## 2. Architecture
+## 🧠 2.  Architecture
 ![Image text](architure2.png)
 
 
-## 3. Our Dataset: Infant-PWMl-CP Dataset
+## 🧬 3.  Our Dataset: Infant-PWMl-CP Dataset
 
 The PWMI-CP MRI dataset focuses on the study of periventricular white matter injury (PWMI) and its role in predicting the risk of cerebral palsy (CP) in infants. It consists of 243 MRI scan cases, including 122 infants diagnosed with PWMI (90 CP cases and 32 non-CP cases) and 121 infants with normal MRI scans as controls. The dataset includes multi-modal MRI scans, such as T1-weighted and T2-weighted imaging, acquired using 3.0T and 1.5T MRI scanners. The dataset provides annotated lesion regions using expert radiologist segmentation, making it a valuable resource for studying PWMI-related brain abnormalities and developing automated diagnostic models for CP risk assessment. 
 ![Image text](visualization.png)
@@ -64,7 +64,7 @@ Infant-PWML-CP/
 ```
 
 
-##  4. Training on the Infant-PWMl-CP Dataset
+##  🏋️‍♂️ 4.  Training on the Infant-PWMl-CP Dataset
 
 ### 🔧 Training
 
@@ -94,7 +94,7 @@ The trained model weights (`last_epoch_weights.pth`) from Fold 0 of the Infant-P
 ---
 
 
-## 5. Applying Our Model to Brain Tumor Segmentation (BraTS 2021)
+## 🧪 5.  Applying Our Model to Brain Tumor Segmentation (BraTS 2021)
 
 ### 🔧 Training
 
@@ -150,7 +150,7 @@ The expected directory structure of the BraTS 2021 dataset is as follows:
 
 
 
-## 6. Requirements
+## 🛠️ 6. Requirements
 
 ```
 torch==1.10.0+cu113
@@ -164,7 +164,7 @@ scipy==1.13.1
 ```
 
 
-## 7. Citation
+## 📚 7. Citation
 ```
 Kai Qi, Tingting Huang, Chao Jin, Yizhe Yang, Shihui Ying, Jian Sun*, and Jian Yang*. Bidirectional Projection-Based Multi-Modal
 Fusion Transformer for Early Detection of Cerebral Palsy in Infants, IEEE Transactions on Medical Imaging, Accept with minor revision, 2025.
@@ -173,7 +173,7 @@ Fusion Transformer for Early Detection of Cerebral Palsy in Infants, IEEE Transa
 
 
 
-## 8. Acknowledgement
+## 🙏 8. Acknowledgement
 
 E. Xie et al. “SegFormer: Simple and efficient design for semantic segmentation with transformers”. NeurIPS 34 (2021), pp. 12077–12090
 
