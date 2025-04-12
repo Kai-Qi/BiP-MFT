@@ -35,6 +35,12 @@ The `pretrained_weight_path` is the weights of SegFormer pre-trained on ImageNet
 
 The `data_path` is our Infant-PWMl-CP Dataset named `Infant-PWMl-CP.zip` (2.86GB), which can be downloaded at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
 
+Example: Train our model on the Infant-PWMl-CP Dataset:
+
+```
+CUDA_VISIBLE_DEVICES=0 python BiP-MFT-2D_Infant-PWMl-CP/train.py --w1 0.2 --w2 0.5 --w3 0.1 --w4 0.2 --learn_rate 0.000015 --num_epochs 30 --fold 0 --phi 'mit_b1' --batch_size 5; 
+```
+
 ### Evaluation
 
 The weights of our model `last_epoch_weights.pth` trained on the 0-fold data of the Infant-PWMl-CP Dataset can be downloaded at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
@@ -90,6 +96,13 @@ The file path `path` and `--dataset-folder` should be changed in the `BiP-MFT-3D
 The `path` is the absolute file path of `BiP-MFT-3D_Brain2021/`.
 
 The `--dataset-folder` is the file path of the BraTS challenge 2021 dataset.
+
+Example: Train our model on the BraTS challenge 2021 dataset:
+
+```
+CUDA_VISIBLE_DEVICES=0 python BiP-MFT-3D_Brain2021/main.py --workers 4 --val 1 --learn_rate2 0.000001 --lr 0.000001 --eta_min 0.0000001 --clip 60 --batch-size 1 --drop_path_rate 0.1 --drop 0.2 --end-epoch 500;
+```
+
 
 ### Evaluation
 
