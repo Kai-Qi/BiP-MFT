@@ -30,7 +30,7 @@ The **PWMI-CP MRI dataset** is designed to support research on periventricular w
   - 32 non-CP cases  
 - 121 healthy controls with normal MRI scans.
 
-The dataset includes **multi-modal MRI sequences** such as T1-weighted and T2-weighted scans, acquired from both 3.0T and 1.5T MRI systems. Expert-annotated lesion segmentations are provided for PWMI cases, making this dataset a valuable resource for studying brain abnormalities and developing automated diagnostic models for early CP risk assessment.
+The dataset includes **multi-modal MRI sequences** such as T1-weighted and T2-weighted scans, acquired from both 3.0T and 1.5T MRI systems. Expert-annotated lesion segmentations are provided for PWMI cases, making this dataset a valuable resource for studying brain abnormalities and developing automated diagnostic models for early CP risk assessment. The following figure shows the five target regions and typical CP-associated PWMI lesions.
 
 ![Image text](visualization.png)
 
