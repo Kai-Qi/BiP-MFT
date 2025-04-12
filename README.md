@@ -123,26 +123,26 @@ The pretrained model weights (`best_model.pkl`) trained on the BraTS 2021 datase
 The expected directory structure of the BraTS 2021 dataset is as follows:
 ```
 ├── dataset/
-│   ├── brats2021
-│   │   ├── train
-│   │   │     ├── BraTS2021_00000
-│   │   │	  │		    ├──BraTS2021_00000_t1.nii.gz
-│   │   │	  │		    ├──BraTS2021_00000_t1ce.nii.gz
-│   │   │	  │		    ├──BraTS2021_00000_t2.nii.gz
-│   │   │	  │		    ├──BraTS2021_00000_flair.nii.gz
-│   │   │	  │		    └──BraTS2021_00000_seg.nii.gz
-│   │   │     ├── BraTS2021_00001   
-│   │   │     └── ...
-│   │   │        
-│   │   ├── val
-│   │   |     ├── BraTS2021_00800
-│   │   |     ├── BraTS2021_00801
-│   │   |     └── ...
-│   │   |     
-│   │   └── test
-│   │         ├── BraTS2021_01000        
-│   |         ├── BraTS2021_01001
-│   |         └── ...
+│   └── brats2021/
+│       ├── train/
+│       │   ├── BraTS2021_00000/
+│       │   │   ├── BraTS2021_00000_t1.nii.gz
+│       │   │   ├── BraTS2021_00000_t1ce.nii.gz
+│       │   │   ├── BraTS2021_00000_t2.nii.gz
+│       │   │   ├── BraTS2021_00000_flair.nii.gz
+│       │   │   └── BraTS2021_00000_seg.nii.gz
+│       │   ├── BraTS2021_00001/
+│       │   └── ...
+│
+│       ├── val/
+│       │   ├── BraTS2021_00800/
+│       │   ├── BraTS2021_00801/
+│       │   └── ...
+│
+│       └── test/
+│           ├── BraTS2021_01000/
+│           ├── BraTS2021_01001/
+│           └── ...
 ```
 
 
