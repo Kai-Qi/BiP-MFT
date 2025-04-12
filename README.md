@@ -27,20 +27,24 @@ The PWMI-CP MRI dataset focuses on the study of periventricular white matter inj
 
 ##  4. Training on our Infant-PWMl-CP Dataset: BiP-MFT-2D_Infant-PWMl-CP/
 
+### Train
+
 The file path "total_path", "pretrained_weight_path" and "data_path" should be changed in the BiP-MFT-2D_Infant-PWMl-CP/train.py.
 
 The "total_path" is your current file path of "BiP-MFT-2D_Infant-PWMl-CP/".
 
-Download our Infant-PWMl-CP Dataset at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
+The "pretrained_weight_path" is the weights of SegFormer (mit-b1.pth) pre-trained on ImageNet-1K, named "mit_b1.pth", which can be download at [SegFormer](https://connecthkuhk-my.sharepoint.com/personal/xieenze_connect_hku_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fxieenze%5Fconnect%5Fhku%5Fhk%2FDocuments%2Fsegformer%2Fpretrained%5Fmodels&ga=1), or [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) and [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
 
-Download weights of SegFormer (mit-b1.pth) pre-trained on ImageNet-1K at [https://github.com/NVlabs/SegFormer?tab=readme-ov-file](https://connecthkuhk-my.sharepoint.com/personal/xieenze_connect_hku_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fxieenze%5Fconnect%5Fhku%5Fhk%2FDocuments%2Fsegformer%2Fpretrained%5Fmodels&ga=1), and put them in a folder
+The "data_path" is our Infant-PWMl-CP Dataset named "Infant-PWMl-CP.zip", which can be download at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
 
-Download weights of our model "" trained on 0-fold of Infant-PWMl-CP Dataset at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
+### Test
+
+The weights of our model "last_epoch_weights.pth" trained on the 0-fold data of Infant-PWMl-CP Dataset can be downloaded at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
 
 
 
 
-Please put the Infant-PWMl-CP Dataset into the dataset/ folder and its structure should be like below:
+The structure of Infant-PWMl-CP should be like below:
 ```
 Infant-PWML-CP/
 |-- CP/
