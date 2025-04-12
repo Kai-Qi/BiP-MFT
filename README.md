@@ -13,6 +13,19 @@ accuracy of 0.90, specificity of 0.87, and sensitivity of
 0.94. It surpasses the best results of nine comparative
 methods, with 0.10, 0.08, and 0.09 improvements in classification accuracy, specificity, and sensitivity, respectively. Our BPFM outperforms eight compared feature fusion strategies using Transformer and U-Net backbones on our dataset. Ablation studies on the dataset annotations and model components justify the effectiveness of our annotation method and the model rationality.
 
+Periventricular white matter injury (PWMI) is the most common magnetic resonance imaging (MRI) finding in infants with cerebral palsy (CP). This work aims to detect CP and identify subtle, sparse PWMI lesions in infants under two years old with immature brain structures.
+
+To this end, we construct a multi-modal dataset consisting of 310 cases, each with:
+- Region masks of five anatomically defined target areas on T1-weighted imaging (T1WI),
+- Lesion annotations on T2-weighted imaging (T2WI),
+- Diagnostic labels (CP or Non-CP).
+
+We further propose a **Bidirectional Projection-Based Multi-Modal Fusion Transformer (BiP-MFT)**, which integrates cross-modal features using a novel **Bidirectional Projection Fusion Module (BPFM)** to align anatomical regions (T1WI) with lesion patterns (T2WI).
+
+Our BiP-MFT achieves subject-level classification accuracy of **0.90**, specificity of **0.87**, and sensitivity of **0.94**, outperforming nine competing methods by **0.10**, **0.08**, and **0.09**, respectively. Additionally, BPFM surpasses eight alternative fusion strategies based on Transformer and U-Net backbones on our dataset.
+
+Comprehensive ablation studies demonstrate the effectiveness of the proposed annotation strategy and validate the design of the model components.
+
 
 ## 🧠 2.  Architecture
 ![Image text](architure2.png)
@@ -20,7 +33,15 @@ methods, with 0.10, 0.08, and 0.09 improvements in classification accuracy, spec
 
 ## 🧬 3.  Our Dataset: Infant-PWMl-CP Dataset
 
-The PWMI-CP MRI dataset focuses on the study of periventricular white matter injury (PWMI) and its role in predicting the risk of cerebral palsy (CP) in infants. It consists of 243 MRI scan cases, including 122 infants diagnosed with PWMI (90 CP cases and 32 non-CP cases) and 121 infants with normal MRI scans as controls. The dataset includes multi-modal MRI scans, such as T1-weighted and T2-weighted imaging, acquired using 3.0T and 1.5T MRI scanners. The dataset provides annotated lesion regions using expert radiologist segmentation, making it a valuable resource for studying PWMI-related brain abnormalities and developing automated diagnostic models for CP risk assessment. 
+The **PWMI-CP MRI dataset** is designed to support research on periventricular white matter injury (PWMI) and its role in predicting the risk of cerebral palsy (CP) in infants. It consists of **243 infant MRI cases**, including:
+
+- 122 infants diagnosed with PWMI:
+  - 90 CP cases  
+  - 32 non-CP cases  
+- 121 healthy controls with normal MRI scans.
+
+The dataset includes **multi-modal MRI sequences** such as T1-weighted and T2-weighted scans, acquired from both 3.0T and 1.5T MRI systems. Expert-annotated lesion segmentations are provided for PWMI cases, making this dataset a valuable resource for studying brain abnormalities and developing automated diagnostic models for early CP risk assessment.
+
 ![Image text](visualization.png)
 
 The dataset (Infant-PWMl-CP.zip, 2.86GB) and dataset documentation are available for download at [Google Drive](https://drive.google.com/drive/folders/1yBVICW9lcDANth-RlwJy1C9M6QNXJ0L2?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1XiwKp7Ayc81qefs3eu7pGg?pwd=fae8).
@@ -151,7 +172,7 @@ The expected directory structure of the BraTS 2021 dataset is as follows:
 
 
 ## 🛠️ 6. Requirements
-
+The following Python packages are required to run our code. We recommend using Python ≥ 3.8 and setting up a virtual environment (e.g., via `conda` or `venv`) for installation.
 ```
 torch==1.10.0+cu113
 mmcv==1.6.1
@@ -165,9 +186,16 @@ scipy==1.13.1
 
 
 ## 📚 7. Citation
+If you find this work useful in your research, please cite our paper:
+
 ```
-Kai Qi, Tingting Huang, Chao Jin, Yizhe Yang, Shihui Ying, Jian Sun*, and Jian Yang*. Bidirectional Projection-Based Multi-Modal
-Fusion Transformer for Early Detection of Cerebral Palsy in Infants, IEEE Transactions on Medical Imaging, Accept with minor revision, 2025.
+@article{qi2025bipmft,
+  title     = {Bidirectional Projection-Based Multi-Modal Fusion Transformer for Early Detection of Cerebral Palsy in Infants},
+  author    = {Kai Qi and Tingting Huang and Chao Jin and Yizhe Yang and Shihui Ying and Jian Sun and Jian Yang},
+  journal   = {IEEE Transactions on Medical Imaging},
+  year      = {2025},
+  note      = {Accepted with minor revision}
+}
 ```
 
 
