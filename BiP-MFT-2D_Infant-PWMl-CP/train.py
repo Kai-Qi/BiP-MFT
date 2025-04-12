@@ -41,7 +41,7 @@ parser.add_argument('--w4', type=float, default=0.2, help='w4')
 parser.add_argument('--gamma', type=float, default=0.9, help='gamma')
 parser.add_argument('--learn_rate2', type=float, default=0.00005, help='learn_rate')
 parser.add_argument('--fold', type=int, default=0, help='fold')
-parser.add_argument('--phi', type=str, default='mit_b1', help='mit_b5')
+parser.add_argument('--phi', type=str, default='mit_b1', help='weights of SegFormer pre-trained on ImageNet-1K')
 parser.add_argument('--seed', type=int, default=228, help='seed')
 
 args = parser.parse_args()
