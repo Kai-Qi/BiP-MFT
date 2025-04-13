@@ -166,7 +166,7 @@ The required Python packages for each code implementation are listed in their re
 
 
 ## 📚 7. Citation
-When using our Infant-PWMl-CP dataset, please cite our paper. If you find this work useful in your research, please cite our paper:
+If using our Infant-PWMl-CP dataset or find this work useful in your research, please cite our paper:
 
 ```
 @article{qi2025bipmft,
