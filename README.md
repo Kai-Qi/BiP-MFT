@@ -19,6 +19,7 @@ Comprehensive ablation studies demonstrate the effectiveness of the proposed ann
 
 ## 🧠 2.  Architecture
 ![Image text](architure2.png)
+![Image text](bidirectional_module.png)
 
 
 ## 🧬 3.  Our Dataset: Infant-PWMl-CP Dataset
