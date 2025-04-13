@@ -93,10 +93,8 @@ Before training, please modify the following file paths in `BiP-MFT-2D_Infant-PW
 **Example command for training on Fold 0:**
 
 ```
-CUDA_VISIBLE_DEVICES=0 python BiP-MFT-2D_Infant-PWML-CP/train.py \
-  --w1 0.2 --w2 0.5 --w3 0.1 --w4 0.2 \
-  --learn_rate 0.000015 --num_epochs 30 \
-  --fold 0 --phi 'mit_b1' --batch_size 5
+CUDA_VISIBLE_DEVICES=0 python BiP-MFT-2D_Infant-PWML-CP/train.py --w1 0.2 --w2 0.5 --w3 0.1 --w4 0.2 \
+  --learn_rate 0.000015 --num_epochs 30 --fold 0 --phi 'mit_b1' --batch_size 5
 ```
 
 
@@ -120,10 +118,8 @@ Before training on the BraTS 2021 dataset, please update the following paths in 
 **Example command for training on BraTS 2021:**
 
 ```
-CUDA_VISIBLE_DEVICES=0 python BiP-MFT-3D_Brain2021/main.py \
-  --workers 4 --val 1 --learn_rate2 0.000001 --lr 0.000001 \
-  --eta_min 0.0000001 --clip 60 --batch-size 1 \
-  --drop_path_rate 0.1 --drop 0.2 --end-epoch 500
+CUDA_VISIBLE_DEVICES=0 python BiP-MFT-3D_Brain2021/main.py --workers 4 --val 1 --learn_rate2 0.000001 --lr 0.000001 \
+  --eta_min 0.0000001 --clip 60 --batch-size 1 --drop_path_rate 0.1 --drop 0.2 --end-epoch 500
 ```
 
 
