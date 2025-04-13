@@ -161,17 +161,8 @@ The expected directory structure of the BraTS 2021 dataset is as follows:
 
 
 ## 🛠️ 6. Requirements
-The following Python packages are required to run our code. We recommend using Python ≥ 3.8 and setting up a virtual environment (e.g., via `conda` or `venv`) for installation.
-```
-torch==1.10.0+cu113
-mmcv==1.6.1
-mmcv_full==1.6.1
-numpy==1.24.4
-opencv_python==4.7.0.72
-Pillow==8.2.0
-scikit_learn==0.24.1
-scipy==1.13.1
-```
+The required Python packages for each code implementation are listed in their respective `requirements.txt` files.
+
 
 
 ## 📚 7. Citation
