@@ -174,7 +174,7 @@ If using our Infant-PWMl-CP dataset or find this work useful in your research, p
   author    = {Kai Qi and Tingting Huang and Chao Jin and Yizhe Yang and Shihui Ying and Jian Sun and Jian Yang},
   journal   = {IEEE Transactions on Medical Imaging},
   year      = {2025},
-  note      = {Accepted with minor revision}
+  note      = {Accepted}
 }
 ```
 
